@@ -1,0 +1,7 @@
+#!/bin/sh
+test -f ../sbtconfig && . ../sbtconfig
+
+HERE="`dirname \"$0\"`"
+
+# set global base to /tmp to disable global plugins
+exec java -Xmx2G -XX:MaxPermSize=1G -XX:ReservedCodeCacheSize=512M ${SBT_OPTS} -jar "$HERE/../libexec/sbt-launch.jar" "$@"

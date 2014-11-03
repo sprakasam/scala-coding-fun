@@ -1,0 +1,59 @@
+run HelloWorld
+compile
+run
+run HelloWorld
+HelloWorld
+test:compile
+scalaVersion
+project say-hello
+reload
+update
+projects
+run HelloWorld
+reload
+update
+reload
+update
+projects
+exit
+test:compile
+run HelloWorld
+reload
+update
+run
+run HelloWorld
+reload
+projects
+run HelloWorld
+reload
+test:compile
+compile
+clean
+compile
+run
+reload
+update
+exit
+compile
+exit
+compile
+run HelloWorld
+update
+run HelloWorld
+compile
+clean
+compile
+exit
+HelloWorld
+run HelloWorld
+run com.samples.HelloWorld
+compile
+run HelloWorld
+exit
+compile
+run LinkedListStack
+run
+reload
+update
+project all
+project root
