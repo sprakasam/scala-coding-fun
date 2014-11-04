@@ -24,6 +24,12 @@ object MyBuild extends Build {
   )
     .settings(settings: _*)
 
+  lazy val funWithNumbers: Project = Project(
+    id = "fun-with-numbers",
+    base = file("fun-with-numbers")
+  )
+    .settings(settings: _*)
+
 
   lazy val root: Project = Project(
     id = "root",
@@ -32,5 +38,6 @@ object MyBuild extends Build {
     .settings(settings: _*)
     .aggregate(complexDataStructures)
     .aggregate(funWithStrings)
+    .aggregate(funWithNumbers)
 
 }
