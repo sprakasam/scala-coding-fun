@@ -1,5 +1,7 @@
 package com.samples
 
+import scala.annotation.tailrec
+
 /**
  * This program determines the sum of the first 1000 prime numbers.
  */
@@ -13,6 +15,7 @@ object CountPrime extends App {
     true
   }
 
+  @tailrec
   def countPrimes(n: Int = 2, accum: Int = 0, noOfPrimes: Int = 1000): Int = {
     if(noOfPrimes == 0) accum
     else {

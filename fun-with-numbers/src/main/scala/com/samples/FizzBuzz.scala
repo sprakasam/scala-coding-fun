@@ -1,5 +1,6 @@
 package com.samples
 
+import scala.annotation.tailrec
 import scala.util.{Success, Try}
 
 /*
@@ -40,7 +41,8 @@ case class Line(firstDivisor: Int, secondDivisor: Int, count: Int) {
     true
   }
 
-  def fizzBuzzes(sb: StringBuilder = new StringBuilder(), n: Int = 1): String = {
+  @tailrec
+  final def fizzBuzzes(sb: StringBuilder = new StringBuilder(), n: Int = 1): String = {
     if (n > count) {
       sb.toString()
     } else {
@@ -64,4 +66,6 @@ object FizzBuzz extends App {
       case _          => println("invalid line, check the constraints")
     }
   }
+
+  source.close()
 }

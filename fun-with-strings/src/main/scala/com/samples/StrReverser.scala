@@ -1,5 +1,7 @@
 package com.samples
 
+import scala.annotation.tailrec
+
 /**
  * Created by IntelliJ IDEA.
  * User: admin
