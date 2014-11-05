@@ -1,5 +1,14 @@
-package com.samples
+package com.samples.time_complex_bounded
 
+/**
+ * This program reverses the given sentence
+ *
+ * INPUT:
+ * I like my job
+ *
+ * OUTPUT:
+ * job my like I
+ */
 object ReverseWordOrders extends App {
 
   // Time complexity is O(n ^ 2)

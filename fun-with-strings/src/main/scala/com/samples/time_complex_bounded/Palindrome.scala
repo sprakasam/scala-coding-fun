@@ -1,4 +1,4 @@
-package com.samples
+package com.samples.time_complex_bounded
 
 object Palindrome extends App{
 

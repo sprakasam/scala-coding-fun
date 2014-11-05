@@ -1,4 +1,4 @@
-package com.samples
+package com.samples.code_eval
 
 /**
  * Write a program which determines the largest prime palindrome less than 1000.

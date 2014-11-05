@@ -1,12 +1,7 @@
-package com.samples
-
-import scala.annotation.tailrec
+package com.samples.time_complex_bounded
 
 /**
- * Created by IntelliJ IDEA.
- * User: admin
- * Date: 4/14/13
- * Time: 4:10 AM
+ * Reverse the string using standard recursion and tail recursion
  */
 
 object StrReverser extends App {

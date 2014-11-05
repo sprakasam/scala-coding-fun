@@ -1,5 +1,16 @@
-package com.samples
+package com.samples.time_complex_bounded
 
+/**
+ * This program deletes the characters from the given string.
+ * Note: Time Complexity should be O(n)
+ *
+ * INPUT:
+ * scala is awesome
+ * and delete "as"
+ *
+ * OUTPUT:
+ * cl i weome
+ */
 object DeleteRepeated extends App {
 
   // Time complexity - O(n)
@@ -29,6 +40,8 @@ object DeleteRepeated extends App {
     new String(s, 0, destIndex)
   }
 
-  println("""Removed the character %c from the word %s and the result is %s""".format('a', "suresh babu", removeRepeated("suresh babu", "ab")))
+  println("""Removed the character %c from the word %s and the result is %s""".format('a', "scala is awesome", removeRepeated("scala is awesome", "a")))
+
+  println("""Removed the character seq %s from the word %s and the result is %s""".format("as", "scala is awesome", removeRepeated("scala is awesome", "as")))
 
 }

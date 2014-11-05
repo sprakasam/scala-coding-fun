@@ -1,10 +1,17 @@
-package com.samples
+package com.samples.time_complex_bounded
 
 /**
- * Created with IntelliJ IDEA.
- * User: admin
- * Date: 11/4/13
- * Time: 4:27 PM
+ * This program sort the entries in the hashmap in ascending order based on the values
+ *
+ * INPUT:
+ *
+ * Map[String,Int]("suresh" -> 4, "preetham" ->2, "kokila" ->3)
+ *
+ * OUTPUT:
+ *
+ * preetham,2
+ * kokila,3
+ * suresh,4
  */
 object SortMap extends App {
 

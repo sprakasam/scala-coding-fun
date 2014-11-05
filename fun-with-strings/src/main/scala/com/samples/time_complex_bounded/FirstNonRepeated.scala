@@ -1,7 +1,17 @@
-package com.samples
+package com.samples.time_complex_bounded
 
 import java.util.{Hashtable => HTable}
 
+/**
+ * This program finds the non repeated character from the given string.
+ * Note: Time Complexity should be O(n)
+ *
+ * INPUT:
+ * scala is awesome
+ *
+ * OUTPUT:
+ * c
+ */
 object FirstNonRepeated extends App {
 
   // Time complexity - O(n)
@@ -21,5 +31,5 @@ object FirstNonRepeated extends App {
     '0'
   }
 
-  println("""The first non-repeated character in the word "%s" is %c""".format("suresh babu", findNonRepeated("suresh babu")))
+  println("""The first non-repeated character in the word "%s" is %c""".format("scala is awesome", findNonRepeated("scala is awesome")))
 }

@@ -1,4 +1,4 @@
-package com.samples
+package com.samples.code_eval
 
 import scala.annotation.tailrec
 

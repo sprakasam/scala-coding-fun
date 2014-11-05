@@ -1,5 +1,16 @@
-package com.samples
+package com.samples.time_complex_bounded
 
+/**
+ * This program reverses the given sentence and converts vowel char to upper case and consonent to lower case in it.
+ *
+ * INPUT:
+ *
+ * i like my job
+ *
+ * OUTPUT:
+ *
+ * bOj ym EkIl I
+ */
 object VowelsAndConsonents extends App {
 
   // Algorithmic approach - Time Complexity is O(n) in all cases Best, Average and Worst
@@ -37,7 +48,7 @@ object VowelsAndConsonents extends App {
     result.reverse.toArray
   }
 
-  println("Convert vowel char to uppper and consonent to lower #####")
+  println("Convert vowel char to upper and consonent to lower #####")
   println("""The input is "i like my job" =>"""+convert("i like my job".toCharArray).mkString(""))
   println("""The input is "i like my job" =>"""+convertWithBuiltInMethods("i like my job".toCharArray).mkString(""))
 
