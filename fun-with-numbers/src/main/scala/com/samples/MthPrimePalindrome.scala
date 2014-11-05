@@ -5,18 +5,27 @@ package com.samples
  */
 object MthPrimePalindrome extends App {
 
-  def isPalindrome(str: String): Boolean = {
+  def isPrime(n: Int): Boolean = {
+    for(i <- 2 to n/2)
+      if( n % i == 0 ) {
+        return false
+      }
+    true
+  }
+
+  def largePalindromeLessThanGivenN(str: String): Int = {
     val strLen = str.size
-    def onePass(index: Int, leftPointer: Int = 0, rightPointer: Int = strLen-1): Boolean = {
+    def isPalindrome(index: Int, leftPointer: Int = 0, rightPointer: Int = strLen-1): Boolean = {
       if(index == strLen/2 || index == (strLen+1)/2)
         true
       else
         if(str.charAt(leftPointer) == str.charAt(rightPointer))
-        onePass(index + 1, leftPointer + 1, rightPointer - 1)
+        isPalindrome(index + 1, leftPointer + 1, rightPointer - 1)
         else false
     }
-    onePass(0)
+    if(isPrime(str.toInt) && isPalindrome(0)) str.toInt else largePalindromeLessThanGivenN((str.toInt - 1) + "")
+
   }
 
-  println(isPalindrome(99+""))
+  println(largePalindromeLessThanGivenN(1000+""))
 }
