@@ -1,0 +1,5 @@
+package palindrome
+
+object CountPalindromingSubstrings {
+
+}

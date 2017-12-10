@@ -13,11 +13,13 @@
             <option value="$PROJECT_DIR$/fun-with-numbers/project" />
             <option value="$PROJECT_DIR$/fun-with-strings" />
             <option value="$PROJECT_DIR$/fun-with-strings/project" />
+            <option value="$PROJECT_DIR$/preparation-dec-2017" />
+            <option value="$PROJECT_DIR$/preparation-dec-2017/project" />
             <option value="$PROJECT_DIR$/project" />
           </set>
         </option>
+        <option name="sbtVersion" value="0.13.5" />
       </SbtProjectSettings>
     </option>
   </component>
 </project>
-

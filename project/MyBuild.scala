@@ -31,6 +31,12 @@ object MyBuild extends Build {
     .settings(settings: _*)
 
 
+  lazy val preparationDec2017: Project = Project(
+    id = "preparation-dec-2017",
+    base = file("preparation-dec-2017")
+  )
+    .settings(settings: _*)
+
   lazy val root: Project = Project(
     id = "root",
     base = file(".")
@@ -39,5 +45,6 @@ object MyBuild extends Build {
     .aggregate(complexDataStructures)
     .aggregate(funWithStrings)
     .aggregate(funWithNumbers)
+      .aggregate(preparationDec2017)
 
 }
