@@ -1,4 +1,4 @@
-package subsequence
+package dataStructures.subsequence
 
 object LongestCommonSubSequence extends App {
 

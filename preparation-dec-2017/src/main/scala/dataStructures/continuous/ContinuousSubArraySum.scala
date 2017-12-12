@@ -1,4 +1,4 @@
-package continuous
+package dataStructures.continuous
 
 import scala.annotation.tailrec
 

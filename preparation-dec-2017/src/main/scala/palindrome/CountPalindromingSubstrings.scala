@@ -1,5 +1,0 @@
-package palindrome
-
-object CountPalindromingSubstrings {
-
-}

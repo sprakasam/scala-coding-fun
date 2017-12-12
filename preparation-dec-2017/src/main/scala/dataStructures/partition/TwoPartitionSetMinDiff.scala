@@ -1,4 +1,4 @@
-package partition
+package dataStructures.partition
 
 import scala.collection.mutable.ListBuffer
 

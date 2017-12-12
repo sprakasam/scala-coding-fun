@@ -1,7 +1,7 @@
 package com.samples.time_complex_bounded
 
 /**
- * This program prints the different permutation of a given word
+ * This program prints the different dataStructures.permutation of a given word
  *
  * INPUT:
  *

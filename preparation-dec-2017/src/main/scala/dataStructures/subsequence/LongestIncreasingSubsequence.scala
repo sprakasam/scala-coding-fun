@@ -1,4 +1,4 @@
-package subsequence
+package dataStructures.subsequence
 
 object LongestIncreasingSubsequence extends App {
 

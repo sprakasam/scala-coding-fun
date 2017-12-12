@@ -67,16 +67,16 @@ object Palindrome extends App{
     innerFn(input, List(), 0)
   }
 
-  println("abdba is palindrome =>"+standardApproach("abdba".toCharArray))
-  println("total is palindrome =>"+standardApproach("total".toCharArray))
-  println("abccba is palindrome =>"+standardApproach("abccba".toCharArray) )
+  println("abdba is dataStructures.palindrome =>"+standardApproach("abdba".toCharArray))
+  println("total is dataStructures.palindrome =>"+standardApproach("total".toCharArray))
+  println("abccba is dataStructures.palindrome =>"+standardApproach("abccba".toCharArray) )
 
-  println("abdba is palindrome =>"+recursiveApproach("abdba"))
-  println("total is palindrome =>"+recursiveApproach("total"))
-  println("abccba is palindrome =>"+recursiveApproach("abccba") )
+  println("abdba is dataStructures.palindrome =>"+recursiveApproach("abdba"))
+  println("total is dataStructures.palindrome =>"+recursiveApproach("total"))
+  println("abccba is dataStructures.palindrome =>"+recursiveApproach("abccba") )
 
-  println("abdba is palindrome =>"+builtInApproach("abdba".toCharArray.toList))
-  println("total is palindrome =>"+builtInApproach("total".toCharArray.toList))
-  println("abccba is palindrome =>"+builtInApproach("abccba".toCharArray.toList) )
+  println("abdba is dataStructures.palindrome =>"+builtInApproach("abdba".toCharArray.toList))
+  println("total is dataStructures.palindrome =>"+builtInApproach("total".toCharArray.toList))
+  println("abccba is dataStructures.palindrome =>"+builtInApproach("abccba".toCharArray.toList) )
 
 }
