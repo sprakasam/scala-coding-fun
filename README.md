@@ -1,4 +1,4 @@
 scala-coding-fun
 ================
 
-code challenges in scala
+Solved complex coding challenges in an elegant and concise way using Scala
