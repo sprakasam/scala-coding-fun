@@ -8,26 +8,24 @@ object ContinuousSubArraySum extends App {
   @tailrec
   def continuousSubArraySum(numbers: Seq[Int],
                             expectedSum: Int,
-                            currentSum: Int,
                             startPosition: Int,
                             endPosition: Int): (Int, Int) = {
-    if (numbers.isEmpty || currentSum == expectedSum) {
+    val currentSum = ((startPosition - 1) until endPosition).map(numbers(_)).sum
+    if (currentSum == expectedSum) {
       (startPosition, endPosition)
     } else {
-      val head = numbers.head
-      if ((currentSum + head) > expectedSum) {
-        (startPosition + 1, endPosition)
+      if (currentSum  > expectedSum) {
+        continuousSubArraySum(numbers, expectedSum, startPosition + 1, endPosition)
       } else {
-        continuousSubArraySum(numbers.tail, expectedSum, currentSum + head, startPosition, endPosition + 1)
+        continuousSubArraySum(numbers, expectedSum, startPosition, endPosition + 1)
       }
     }
   }
 
   val result = continuousSubArraySum(numbers = Seq(1, 2, 3, 7, 5),
-    expectedSum = 15,
-    currentSum = 0,
+    expectedSum = 18,
     startPosition = 1,
-    endPosition = 0)
+    endPosition = 1)
 
   println(result)
 }

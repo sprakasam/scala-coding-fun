@@ -23,6 +23,7 @@ object Dependencies extends App {
 
       // 1. Identify the proper termination condition
       // 2: Identify the variables required to store the intermediate results
+      // 3: Make sure the intermediate variable are updated properly in each iteration
       val isExploreDone = (foundDependencies.isEmpty || foundDependencies.get.isEmpty) && currentDependencies.isEmpty
       if (isExploreDone)
         result

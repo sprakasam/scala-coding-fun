@@ -10,6 +10,7 @@ object LongestIncreasingSubsequence extends App {
             lis(i) = lis(j) + 1
       }
     }
+    println(lis.mkString(","))
     lis.max
   }
 

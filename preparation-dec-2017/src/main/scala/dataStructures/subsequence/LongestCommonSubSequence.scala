@@ -1,6 +1,8 @@
 package dataStructures.subsequence
 
+// using matrix of characters
 object LongestCommonSubSequence extends App {
+
 
   val s1 = "AGGTAB"
   val s2 = "GXTXAYB"
@@ -22,5 +24,4 @@ object LongestCommonSubSequence extends App {
   def max(a: Int, b: Int) = if (a > b) a else b
 
   System.out.println("Length of LCS is" + " " + lcs(X, Y, m, n))
-
 }
