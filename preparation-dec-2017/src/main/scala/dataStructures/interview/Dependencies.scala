@@ -47,5 +47,5 @@ object Dependencies extends App {
     println(result.mkString(" "))
   }
 
-  getDependencies('d')
+  getDependencies('a')
 }

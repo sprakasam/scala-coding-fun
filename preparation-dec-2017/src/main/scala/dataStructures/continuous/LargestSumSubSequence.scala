@@ -29,7 +29,7 @@ object LargestSumSubSequence extends App {
     if(maxSum.maxSoFar < currentSum)
       maxSum.copy(maxSoFar = currentSum, maxEndingHere =  maxEnding)
     else
-      maxSum.copy(maxEndingHere = maxEnding)
+      maxSum.copy(maxEndingHere = currentSum)
 
   })
 

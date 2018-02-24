@@ -12,12 +12,12 @@ object UniquePath extends App {
   for(i <- 0 to M; j <- 0 to N if i == 0 || j == 0)
     pathValueArrayArray(i)(j) = 1
 
-  for(i <- 1 to M; j <- 1 to N)  {
+  for(i <- 1 until M; j <- 1 until N)  {
     val v = pathValueArrayArray(i-1)(j) + pathValueArrayArray(i)(j-1)
-    println(v)
-    pathValueArrayArray(i).update(j, v)
+    println(s"i=$i, j=$j, value = $v")
+    pathValueArrayArray(i)(j) = v
   }
 
-  println(pathValueArrayArray(M)(N))
+  println(pathValueArrayArray(M-1)(N-1))
 
 }

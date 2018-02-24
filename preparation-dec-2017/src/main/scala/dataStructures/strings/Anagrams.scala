@@ -7,10 +7,11 @@ object Anagrams extends App {
 
   // expected out is 30
 
-  val commonChars = a.foldLeft("")((output, char) => {
+  val sb = new StringBuilder()
+  val commonChars = a.foldLeft(sb)((output, char) => {
     val countInB = b.count(_ == char)
     val countInA = output.count(_ == char) + 1
-    if(b.exists(_ == char) && countInA <= countInB) output + char else output
+    if(b.exists(_ == char) && countInA <= countInB) output.append(char) else output
   })
 
   val result = (a.length - commonChars.length) + (b.length - commonChars.length)

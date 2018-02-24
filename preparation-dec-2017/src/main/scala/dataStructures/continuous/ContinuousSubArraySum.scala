@@ -11,7 +11,7 @@ object ContinuousSubArraySum extends App {
                             startPosition: Int,
                             endPosition: Int): (Int, Int) = {
     val currentSum = ((startPosition - 1) until endPosition).map(numbers(_)).sum
-    if (currentSum == expectedSum) {
+    if (currentSum == expectedSum) { // exit condition
       (startPosition, endPosition)
     } else {
       if (currentSum  > expectedSum) {

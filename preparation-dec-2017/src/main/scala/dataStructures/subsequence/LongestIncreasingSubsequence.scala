@@ -14,6 +14,16 @@ object LongestIncreasingSubsequence extends App {
     lis.max
   }
 
+  case class IncreasingSequence(index: Int, element: Int)
+
+  val result = Array(10, 22, 9, 33, 21, 50, 41, 60).tail.foldLeft(IncreasingSequence(1, 10))((accum, element) => {
+    if(element > accum.element)
+      IncreasingSequence(accum.index + 1, element)
+    else
+      accum
+  })
+
   println(computeLIS(Array(10, 22, 9, 33, 21, 50, 41, 60)))
 
+  println(result.index)
 }

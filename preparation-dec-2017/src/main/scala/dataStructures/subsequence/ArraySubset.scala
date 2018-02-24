@@ -8,7 +8,7 @@ object ArraySubset extends App {
     if(remainder.isEmpty) // exit case
       result
     else if (result.isEmpty) { // base case
-      val subsets = Array(Array.empty[String], Array(remainder.head))
+      val subsets = Array(Array(remainder.head))
       subset(remainder.tail, subsets)
     } else {
       // add the remainders head to all the subsets in the result
@@ -16,7 +16,7 @@ object ArraySubset extends App {
       // result => Array(Array.emptyString, Array("a"))
       // To add b => Array(Array("b"), Array("a", "b"))
       // Outcome will be Array(Array.emptyString, Array("a"), Array("b"), Array("a", "b"))
-      val subsets = result.foldLeft(Array.empty[Array[String]])((accum, subsets) => {
+      val subsets = result.foldLeft(Array(Array(stringToAdd)))((accum, subsets) => {
         accum :+ (subsets :+ stringToAdd)
       })
 

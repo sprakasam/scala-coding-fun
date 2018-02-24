@@ -1,4 +1,4 @@
-package dataStructures.subsequence
+package dataStructures.continuous
 
 import scala.collection.mutable.Map
 

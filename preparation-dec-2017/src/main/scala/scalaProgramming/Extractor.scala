@@ -12,6 +12,7 @@ object Extractor extends App {
     def unapply(user: FreeUser): Option[String] = Some(user.name)
   }
   object PremiumUser {
+    def apply(s: String) = new PremiumUser(s)
     def unapply(user: PremiumUser): Option[String] = Some(user.name)
   }
 
@@ -21,4 +22,5 @@ object Extractor extends App {
     case PremiumUser(name) => println("Welcome back, dear " + name)
   }
 
+  val f = new Foo
 }
