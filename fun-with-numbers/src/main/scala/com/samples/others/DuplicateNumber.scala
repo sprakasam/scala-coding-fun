@@ -7,7 +7,6 @@ object DuplicateNumber extends App {
   val numbers = Set(1, 2, 3, 2, 5)
   val list = List(1, 2, 3, 2, 5)
 
-  @tailrec
   def hasDuplicate(actual: List[Int], filtered: List[Int] = Nil): Boolean = {
     actual match {
       case Nil                                      =>  filtered.size != list.size
